@@ -7,6 +7,8 @@ import io.cucumber.java.en.When;
 import tests.TestBase;
 
 public class LoginSteps extends TestBase {
+    private static final String SUCCESS_LOGIN = "Logged In Successfully";
+
     @Given("The user is already registered")
     public void theUserIsAlreadyRegistered() {
     }
@@ -33,5 +35,6 @@ public class LoginSteps extends TestBase {
 
     @Then("I should be logged in successfully")
     public void iShouldBeLoggedInSuccessfully() {
+        softAssert.assertEquals(successfulLoginPage.getSuccessTitleText(), SUCCESS_LOGIN);
     }
 }

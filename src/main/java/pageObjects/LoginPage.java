@@ -1,13 +1,17 @@
 package pageObjects;
 
+import fundamentals.Waiting;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
 
+    Waiting waiting;
+
     public LoginPage(WebDriver driver) {
         super(driver);
+        waiting = new Waiting(driver);
     }
 
     @FindBy(id = "username")
@@ -20,17 +24,17 @@ public class LoginPage extends BasePage {
     private WebElement submitButton;
 
     public void enterUserName(String userName) {
-        clear(userNameField);
-        sendKeys(userNameField, userName);
+        waiting.clear(userNameField);
+        waiting.sendKeys(userNameField, userName);
     }
 
     public void enterPassword(String userPassword) {
-        clear(passwordField);
-        sendKeys(passwordField, userPassword);
+        waiting.clear(passwordField);
+        waiting.sendKeys(passwordField, userPassword);
     }
 
     public void clickLoginButton() {
-        click(submitButton);
+        waiting.click(submitButton);
     }
 
     public void visitLoginPage() {
