@@ -6,7 +6,8 @@ import tests.TestBase;
 public class Hooks extends TestBase {
 
     @BeforeAll
-    public void start() {}
+    public static void start() {
+    }
 
     @Before
     public void before(Scenario scenario) {
@@ -21,5 +22,6 @@ public class Hooks extends TestBase {
     }
 
     @AfterAll
-    public void end() {}
+    public static void end() {
+    }
 }

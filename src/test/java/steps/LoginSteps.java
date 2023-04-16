@@ -13,7 +13,7 @@ public class LoginSteps extends TestBase {
 
     @Given("I am on the login page")
     public void iAmOnTheLoginPage() {
-        driver.get("https://practicetestautomation.com/practice-test-login/");
+        loginPage.visitLoginPage();
     }
 
     @When("I enter the user name {string}")

@@ -32,4 +32,8 @@ public class LoginPage extends BasePage {
     public void clickLoginButton() {
         click(submitButton);
     }
+
+    public void visitLoginPage() {
+        driver.get("https://practicetestautomation.com/practice-test-login/");
+    }
 }

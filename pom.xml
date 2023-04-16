@@ -15,24 +15,21 @@
 
     <dependencies>
 
-        <!--BDD FRAMEWORK-->
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <!--Cucumber Dependencies-->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.11.0</version>
+            <version>7.2.3</version>
         </dependency>
 
-        <!--E2E TEST AUTOMATION FRAMEWORK-->
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+        <!--Cucumber TestNG Dependencies-->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>7.11.0</version>
+            <version>7.2.3</version>
         </dependency>
 
-        <!--WEB AUTOMATION FRAMEWORK-->
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <!--Selenium Dependencies-->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -44,7 +41,6 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.3.2</version>
-            <scope>test</scope>
         </dependency>
 
     </dependencies>
